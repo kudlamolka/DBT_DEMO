@@ -1,4 +1,4 @@
-{% macro get_station(x) %}
+{% macro get_season(x) %}
 
     CASE WHEN MONTH(TO_TIMESTAMP({{x}})) IN (12,1,2)
     THEN 'WINTER'
