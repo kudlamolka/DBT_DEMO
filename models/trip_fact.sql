@@ -8,6 +8,5 @@ with trips as (
         member_csual as member_casual,
         timestampdiff(second,to_timestamp(started_at),to_timestamp(ended_at)) 
     from {{ source('demo', 'bike') }}
-    limit 10
 )
 select * from trips
